@@ -22,7 +22,7 @@ class Speed extends BaseCommand{
 	 *
 	 * @return bool
 	 */
-    public function execute(CommandSender $sender, string $alias, array $args): bool{
+    public function execute(CommandSender $sender, $alias, array $args): bool{
         if($this->testPermission($sender)){
             return false;
         }
